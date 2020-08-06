@@ -1,0 +1,15 @@
+Bucuresti-Constanta
+Constanta-Mangalia
+Bucuresti-Ploiesti
+Ploiesti-Sinaia
+Sinaia-Brasov
+Brasov-Sibiu
+Timisoara-Deva
+Deva-Cluj Napoca
+Deva-Oradea
+Iasi-Botosani
+Iasi-Suceava
+Piatra Neamt-Bacau
+Piatra Neamt-Iasi
+Brasov-Bacau
+Sibiu-Cluj Napoca

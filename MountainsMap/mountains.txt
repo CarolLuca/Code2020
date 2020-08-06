@@ -1,0 +1,10 @@
+Mount Adams,12281,46.2025,-121.490833
+Mount Baker,10778,48.777222,-121.813333
+Glacier Peak,10541,48.1125,-121.113889
+Goat Rocks,8184,46.5,-121.45
+Indian Heaven,5925,45.93,-121.82
+Mount Rainier,14411,46.853056,-121.759722
+Mount St. Helens,8364,46.191111,-122.194167
+Silver Star Mountain,4364,45.747722,-122.239028
+West Crater,4360,45.88,-122.08
+White Chuck Cinder Cone,6002,45.88,-122.08
