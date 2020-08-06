@@ -42,7 +42,7 @@ public class Generator {
 		ArrayList<Side> walls=shuffle(cell.getWalls());
 		for(Side latura:walls) {
 			Cell vecin=mz.getNeighbor(cell,latura);
-			if(!vecin.getVisited()) { //--------------------------------------------
+			if(!vecin.getVisited()) { //---------------------------------------------
 				mc.drawPath(cell.getRow(),cell.getCol(),latura,generatePathColor);
 				cell.removeWall(latura);
 			}
