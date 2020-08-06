@@ -13,5 +13,5 @@ public class BlockCell extends ShadedCell {
 	}
 	public BlockCell(MazeCanvas mc, int row, int col) {
 		super(mc, row, col, blockShadeColor);
-	}
+	} 
 }

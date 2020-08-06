@@ -48,7 +48,7 @@ public class Generator {
 			}
 		}
 		return false;
-	}
+	} 
 
 	public boolean run() {
 		return run(mz.getEntryCell(), Side.Center);

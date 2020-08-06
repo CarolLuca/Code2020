@@ -27,5 +27,5 @@ public class EdgeCell extends ShadedCell {
 		for (Side edge : listOfEdges)
 			walls.remove((Side) edge);
 		return walls;
-	}
+	} 
 }

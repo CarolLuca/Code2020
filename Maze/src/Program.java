@@ -21,6 +21,6 @@ public class Program {
 		Generator generator = new Generator(mc, m);
 		generator.run();
 		mc.pause();
-	}
+	} 
 
 }

@@ -17,7 +17,7 @@ public class Cell {
 
 	public void setVisited(boolean visited) {
 		this.visited=visited;
-	}
+	} 
 
 	public Cell(MazeCanvas _mc, int _row, int _column) {
 		mc = _mc;

@@ -104,7 +104,7 @@ public class Maze {
 
 	public Cell getExitCell() {
 		return exitCell;
-	}
+	} 
 
 	public Cell getNeighbor(Cell cell, Side side) {
 		if (side == Side.Top && cell.getRow() > 0)

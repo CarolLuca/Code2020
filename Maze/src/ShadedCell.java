@@ -14,5 +14,5 @@ public class ShadedCell extends Cell {
 		super(_mc, _row, _column);
 		culoare = _culoare;
 		mc.drawCell(row, column, culoare);
-	}
+	} 
 }
