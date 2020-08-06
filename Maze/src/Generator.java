@@ -9,6 +9,7 @@ public class Generator {
 	private MazeCanvas mc;
 	private Maze mz;
 	private static final Color generatePathColor = new Color(252, 3, 186);
+	private static final Color generateHeadColor = new Color(0, 0, 0);
 
 	public Generator(MazeCanvas _mc, Maze _mz) {
 		mc = _mc;
@@ -36,7 +37,7 @@ public class Generator {
 	public boolean run(Cell cell, Side side) {
 		cell.setVisited(true);
 		mc.drawPath(cell.getRow(), cell.getCol(), side, generatePathColor);
-		mc.drawCenter(cell.getRow(), cell.getCol(), generatePathColor);
+		mc.drawCenter(cell.getRow(), cell.getCol(), generateHeadColor);
 		cell.removeWall(side);
 		mc.step(10);
 		ArrayList<Side> walls = shuffle(cell.getWalls());

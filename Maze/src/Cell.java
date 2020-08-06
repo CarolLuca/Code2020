@@ -44,4 +44,12 @@ public class Cell {
 		mc.eraseWall(row, column, side);
 		listOfWalls.remove((Side) side);
 	}
+
+	public ArrayList<Side> getPaths() {
+		ArrayList<Side> listOfPaths = new ArrayList<Side>();
+		Collections.addAll(listOfPaths, new Side[] { Side.Bottom, Side.Top, Side.Left, Side.Right });
+		for (Side side : listOfWalls)
+			listOfPaths.remove((Side) side);
+		return listOfPaths;
+	}
 }

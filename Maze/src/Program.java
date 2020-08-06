@@ -21,6 +21,10 @@ public class Program {
 		Generator generator = new Generator(mc, m);
 		generator.run();
 		mc.pause();
+
+		Solver solver = new Solver(mc, m);
+		solver.run();
+		mc.pause();
 	}
 
 }

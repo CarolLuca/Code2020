@@ -28,4 +28,12 @@ public class EdgeCell extends ShadedCell {
 			walls.remove((Side) edge);
 		return walls;
 	}
+
+	@Override
+	public ArrayList<Side> getPaths() {
+		ArrayList<Side> listOfPaths = super.getPaths();
+		for (Side side : listOfEdges)
+			listOfPaths.remove((Side) side);
+		return listOfPaths;
+	}
 }
