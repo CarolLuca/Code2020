@@ -9,5 +9,5 @@ public class ExitCell extends EdgeCell {
 	public ExitCell(MazeCanvas mc, int row, int col) {
 		super(mc, row, col);
 		mc.drawShade(row, col, exitShadeColor);
-	} 
+	}
 }

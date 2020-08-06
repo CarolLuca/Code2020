@@ -9,5 +9,5 @@ public class EntryCell extends EdgeCell {
 	public EntryCell(MazeCanvas mc, int row, int col) {
 		super(mc, row, col);
 		mc.drawShade(row, col, entryShadeColor);
-	} 
+	}
 }

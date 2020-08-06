@@ -35,20 +35,26 @@ public class Generator {
 
 	public boolean run(Cell cell, Side side) {
 		cell.setVisited(true);
-		mc.drawPath(cell.getRow(),cell.getCol(),side,generatePathColor);
+		mc.drawPath(cell.getRow(), cell.getCol(), side, generatePathColor);
 		mc.drawCenter(cell.getRow(), cell.getCol(), generatePathColor);
 		cell.removeWall(side);
 		mc.step(10);
-		ArrayList<Side> walls=shuffle(cell.getWalls());
-		for(Side latura:walls) {
-			Cell vecin=mz.getNeighbor(cell,latura);
-			if(!vecin.getVisited()) { //---------------------------------------------
-				mc.drawPath(cell.getRow(),cell.getCol(),latura,generatePathColor);
+		ArrayList<Side> walls = shuffle(cell.getWalls());
+		for (Side latura : walls) {
+			Cell vecin = mz.getNeighbor(cell, latura);
+			if (!vecin.getVisited()) { // ---------------------------------------------
+				mc.drawPath(cell.getRow(), cell.getCol(), latura, generatePathColor);
+				mc.drawCenter(cell.getRow(), cell.getCol(), generatePathColor);
 				cell.removeWall(latura);
+				run(vecin, getOpposite(latura));
+				mc.erasePath(cell.getRow(), cell.getCol(), latura);
 			}
 		}
+		mc.step(10);
+		mc.eraseCenter(cell.getRow(), cell.getCol());
+		mc.erasePath(cell.getRow(), cell.getCol(), side);
 		return false;
-	} 
+	}
 
 	public boolean run() {
 		return run(mz.getEntryCell(), Side.Center);
