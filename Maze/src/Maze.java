@@ -65,6 +65,7 @@ public class Maze {
 		}
 	}
 
+	private static final Color fundal=new Color(0,0,0);
 	public void initialize() {
 		int count = ((mc.getRows() - 2) * (mc.getCols() - 2)) / 20;
 		int nPerim = 2 * mc.getRows() + 2 * mc.getCols() - 4, edgeCount = 0;

@@ -25,6 +25,7 @@ public class Program {
 		Solver solver = new Solver(mc, m);
 		solver.run();
 		mc.pause();
+		
 	}
 
 }

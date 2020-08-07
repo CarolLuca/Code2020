@@ -4,7 +4,7 @@ import graphics.MazeCanvas;
 import graphics.MazeCanvas.Side;
 
 public class EntryCell extends EdgeCell {
-	private static final Color entryShadeColor = new Color(0, 255, 17);
+	private static final Color entryShadeColor = new Color(255, 255, 0);
 
 	public EntryCell(MazeCanvas mc, int row, int col) {
 		super(mc, row, col);
