@@ -26,8 +26,8 @@ public class Generator extends Explorer{
 	}
 
 	protected void onStepForward(Cell cell, Side side) {
+		mc.drawCenter(cell.getRow(), cell.getCol(), generateHeadColor);
 		super.onStepForward(cell,side);
-		mc.drawCenter(cell.getRow(), cell.getCol(), generatePathColor);
 		cell.removeWall(side);
 	}
 

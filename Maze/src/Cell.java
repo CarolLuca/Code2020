@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -25,7 +26,7 @@ public class Cell {
 		column = _column;
 		listOfWalls = new ArrayList<Side>();
 		Collections.addAll(listOfWalls, new Side[] { Side.Bottom, Side.Top, Side.Left, Side.Right });
-		mc.drawCell(row, column);
+		mc.drawCell(row, column, new Color(207, 188, 138));
 	}
 
 	public int getRow() {
